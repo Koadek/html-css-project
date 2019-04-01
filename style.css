@@ -51,7 +51,7 @@ html {
 
 .section > a:hover::after {
   content: "";
-  width: 1px;
+  width: 1%;
   height: 5px;
   background: #fff;
   position: absolute;
