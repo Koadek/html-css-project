@@ -73,6 +73,9 @@ Size an <img> element like you would a background image, with properties like **
 `object-position`  
 Can be used like the `background-position` property
 
+`overflow`  
+Specify the behavior of overflowing content (e.g. can hide overflowing content)
+
 `-webkit-appearance: none`  
 Some elements (e.g. checkbox input) cannot be styled. Using this CSS property, the functionality of the element is kept but the look of the element can be created from scratch. The _webkit_ prefix is to use the chrome implementation of the `appearance` CSS property.
 
@@ -101,11 +104,20 @@ Use this to specify the height of new grid rows (vs. `grid-template-rows` where 
 
 ## Media queries
 
-I suggest putting all your media queries in one place (at the bottom for example.). You can use these values:  
+Use the following meta tag (put it first in the `<head>` section) to have the appropriate scale on all devices:  
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+Put all your media queries at the bottom so they override your mobile CSS rules. You can use these values:  
 Tablets: `768px`  
 Desktops: `1200px`
 
-Notice there is no value for mobile, you should do mobile first design. All your CSS rules are for mobile (smaller than 768px screen width). Then you can override the CSS rules inside your media queries for larger screen sizes.
+We will be doing mobile first design using **min-width** rules for the media queries.
+
+```css
+@media (min-width: 768px) {
+  /* CSS Rules */
+}
+```
 
 ## Notes
 
