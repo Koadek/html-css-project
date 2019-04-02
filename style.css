@@ -129,6 +129,7 @@ html {
 .mobile-list {
   margin: 0;
   padding: 0;
+  width: 100vh;
 }
 
 .mobile-list > li {
