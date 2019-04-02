@@ -129,12 +129,13 @@ html {
 .mobile-list {
   margin: 0;
   padding: 0;
-  width: 100vh;
 }
 
 .mobile-list > li {
   list-style-type: none;
   padding: 20px;
+  width: 100vh;
+  min-width: 100vh;
 }
 
 .menu-list > li {
@@ -175,12 +176,11 @@ html {
 }
 
 .center-content > h1 {
-  font-size: 4rem;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 .introduction h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 20px;
 }
 
@@ -189,7 +189,6 @@ html {
   border-top: 1px dashed #ddd;
   padding: 50px 0px;
   margin: 0 20px;
-  font-size: 1.2rem;
 }
 
 .top-background {
@@ -432,6 +431,18 @@ button:hover {
 
   .mobile {
     display: none;
+  }
+
+  .center-content > h1 {
+    font-size: 4rem;
+  }
+
+  .introduction h2 {
+    font-size: 3rem;
+  }
+
+  .lorem-intro {
+    font-size: 1.2rem;
   }
 
   .border {
